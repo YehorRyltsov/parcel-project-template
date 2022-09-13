@@ -1,0 +1,102 @@
+.company {
+  background: #ffffff;
+}
+.company-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.company__title {
+  font-size: 28px;
+  line-height: 1.18;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  text-align: center;
+  color: var(--header-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+.company-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+
+  flex-wrap: wrap;
+  // padding: 0 15px;
+  // width: calc(100% / 2 - 30px);
+
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: calc(100% / 3 - 30px);
+
+  // }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.company-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  height: 100%;
+  cursor: pointer;
+
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill 250ms, border-radius 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+    transition: fill 250ms;
+  }
+  &:focus svg {
+    fill: #2196f3;
+  }
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+}
+.company-list__item {
+  width: calc(100% / 2 - 30px);
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
+  }
+  height: 92px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .company-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .company-list__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+// .company-list__item:not(:last-child) {
+//   margin-right: 30px;
+// }

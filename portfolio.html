@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo heder__logo link"
+          ><span lang="en" class="logo__web">Web</span
+          ><span lang="en" class="logo__studio">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a href="./index.html" class="menu__link link">Студия</a>
+              <div class="header-link-line"></div>
+            </li>
+            <li class="menu-list__item">
+              <a href="./portfolio.html" class="menu__link active link"
+                >Портфолио</a
+              >
+              <div class="link__line"></div>
+            </li>
+            <li class="menu-list__item link">
+              <a href="" class="menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contacts-list__link">
+            <a href="mailto:info@devstudio.com" class="mail link">
+              <svg class="contacts__icon">
+                <use href="./images/icon2.svg#icon-envelope"></use>
+              </svg>
+              <span>info@devstudio.com </span></a
+            >
+          </li>
+          <li class="contacts-list__link">
+            <a href="tel:+380991111111" class="phone link">
+              <svg class="contacts__icon">
+                <use href="./images/icon2.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 099 111 11 11</span></a
+            >
+          </li>
+        </ul>
+        <div>
+          <button type="button" class="mob-menu-btn">
+            <svg height="40px" width="40px">
+              <use href="./images/icon2.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="mob-menu-close-btn mob-close">
+                <svg height="18px" width="18px">
+                  <use href="./images/icon2.svg#icon-close"></use>
+                </svg>
+              </button>
+              <nav class="mob-navigation">
+                <ul class="mob-menu-list list">
+                  <li class="mob-menu-list__item">
+                    <a href="./index.html" class="mob-menu__link link"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="mob-menu-list__item">
+                    <a href="./portfolio.html" class="mob-menu__link link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mob-menu-list__item link">
+                    <a href="" class="mob-menu__link link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mob-menu-bottom">
+              <ul class="mob-contacts-list list">
+                <li class="mob-contacts-list__link">
+                  <a href="tel:+380991111111" class="mob-phone link">
+                    <span>+38 099 111 11 11</span></a
+                  >
+                </li>
+                <li class="mob-contacts-list__link">
+                  <a href="mailto:info@devstudio.com" class="mob-mail link">
+                    <span>info@devstudio.com </span></a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mob-list__block list">
+                <li class="mob__list">
+                  <a href="https://instagram.com" class="mob-list__link link">
+                    <span>instagram</span>
+                  </a>
+                </li>
+                <li class="mob__list">
+                  <a href="https://twitter.com" class="mob-list__link link">
+                    <span> twitter </span>
+                  </a>
+                </li>
+                <li class="mob__list">
+                  <a href="https://facebook.com" class="mob-list__link link">
+                    <span> facebook </span>
+                  </a>
+                </li>
+                <li class="mob__list">
+                  <a href="https://linkedin.com" class="mob-list__link link">
+                    <span>linkedin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="herop">
+        <div class="container">
+          <div class="hero-portfolio">
+            <div class="hero-button-p">
+              <h3 class="is-hidden">Фильтра</h3>
+              <ul class="herop-list list">
+                <li class="herop-button-item">
+                  <button type="button" class="herop-button">
+                    <span class="herop-button-text">Все</span>
+                  </button>
+                </li>
+
+                <li class="herop-button-item">
+                  <button type="button" class="herop-button">
+                    <span class="herop-button-text">Веб-сайты</span>
+                  </button>
+                </li>
+
+                <li class="herop-button-item">
+                  <button type="button" class="herop-button">
+                    <span class="herop-button-text">Приложения</span>
+                  </button>
+                </li>
+
+                <li class="herop-button-item">
+                  <button type="button" class="herop-button">
+                    <span class="herop-button-text">Дизайн</span>
+                  </button>
+                </li>
+
+                <li class="herop-button-item">
+                  <button type="button" class="herop-button">
+                    <span class="herop-button-text">Маркетинг</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <h1 class="is-hidden">Портфолио</h1>
+            <ul class="hero-portfolio-list list">
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt1.jpg    1x,
+                          ./images/projeckt1-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt1-tab.jpg    1x,
+                          ./images/projeckt1-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt1-mob.jpg    1x,
+                          ./images/projeckt1-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt1.jpg"
+                        alt="Крутой Веб-сайт"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">Технокряк</h3>
+                    <p class="hero-portfolio-text">Веб-сайт</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt2.jpg    1x,
+                          ./images/projeckt2-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt2-tab.jpg    1x,
+                          ./images/projeckt2-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt2-mob.jpg    1x,
+                          ./images/projeckt2-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt2.jpg"
+                        alt="Крутой дизайн"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Постер <span lang="en"> New Orlean vs Golden Star</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Дизайн</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt3.jpg    1x,
+                          ./images/projeckt3-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt3-tab.jpg    1x,
+                          ./images/projeckt3-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt3-mob.jpg    1x,
+                          ./images/projeckt3-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt3.jpg"
+                        alt="супер Приложение"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Ресторан <span lang="en"> Seafood</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Приложение</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt4.jpg    1x,
+                          ./images/projeckt4-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt4-tab.jpg    1x,
+                          ./images/projeckt4-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt4-mob.jpg    1x,
+                          ./images/projeckt4-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt4.jpg"
+                        alt="Мега маркетинг"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Проект <span lang="en"> Prime</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Маркетинг</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt5.jpg    1x,
+                          ./images/projeckt5-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt5-tab.jpg    1x,
+                          ./images/projeckt5-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt5-mob.jpg    1x,
+                          ./images/projeckt5-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt5.jpg"
+                        alt="Приложение супер"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Проект <span lang="en"> Boxes</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Приложение</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt6.jpg    1x,
+                          ./images/projeckt6-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt6-tab.jpg    1x,
+                          ./images/projeckt6-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt6-mob.jpg    1x,
+                          ./images/projeckt6-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt6.jpg"
+                        alt="Веб-сайт"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 lang="en" class="hero-portfolio-header">
+                      <span lang="en"> Inspiration has no Borders</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Веб-сайт</p>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt7.jpg    1x,
+                          ./images/projeckt7-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt7-tab.jpg    1x,
+                          ./images/projeckt7-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt7-mob.jpg    1x,
+                          ./images/projeckt7-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt7.jpg"
+                        alt="Дизайн"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Издание <span lang="en"> Limited Edition</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Дизайн</p>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt8.jpg    1x,
+                          ./images/projeckt8-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt8-tab.jpg    1x,
+                          ./images/projeckt8-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt8-mob.jpg    1x,
+                          ./images/projeckt8-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt8.jpg"
+                        alt="Маркетинг"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      Проект <span lang="en"> LAB</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Маркетинг</p>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-portfolio-item">
+                <div class="hero-portfolio-cont">
+                  <div class="hero-portfolio-box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/projeckt9.jpg    1x,
+                          ./images/projeckt9-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt9-tab.jpg    1x,
+                          ./images/projeckt9-tab-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/projeckt9-mob.jpg    1x,
+                          ./images/projeckt9-mob-2x.jpg 2x
+                        "
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        src="./images/projeckt9.jpg"
+                        alt="Приложение"
+                        class="hero-portfolio__img"
+                      />
+                    </picture>
+
+                    <p class="hero-portfolio-top">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения  о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                  <div class="herop-text">
+                    <h3 class="hero-portfolio-header">
+                      <span lang="en">Growing Business</span>
+                    </h3>
+                    <p class="hero-portfolio-text">Приложение</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <div class="footer-box-logo">
+            <a href="./index.html" class="footer-box-logo__link">
+              <span lang="en" class="footer-box-logo__web">Web</span
+              ><span lang="en" class="footer-box-logo__studio">Studio</span>
+            </a>
+          </div>
+          <address class="footer-box-address">
+            <ul class="footer-box-list list">
+              <li class="footer-box-list__item">
+                <a
+                  href="https://goo.gl/maps/tp6RnTMtRqkybkJb9"
+                  target="_blank"
+                  rel="noopener, noindex, nofollow"
+                  class="footer-box-list__map link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-box-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer-box-list__mail link"
+                  >mailto:info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-box-list__item">
+                <a href="tel:+380991111111" class="footer-box-list__phone link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social__text">присоединяйтесь</p>
+          <ul class="footer-social-block list">
+            <li class="footer-social-block__icon">
+              <a
+                href="https://instagram.com"
+                class="footer-social-block__link link"
+              >
+                <svg height="20px" width="20px">
+                  <use href="./images/icon2.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-block__icon">
+              <a
+                href="https://twitter.com"
+                class="footer-social-block__link link"
+              >
+                <svg height="20px" width="20px">
+                  <use href="./images/icon2.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-block__icon">
+              <a
+                href="https://facebook.com"
+                class="footer-social-block__link link"
+              >
+                <svg height="20px" width="20px">
+                  <use href="./images/icon2.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-block__icon">
+              <a
+                href="https://linkedin.com"
+                class="footer-social-block__link link"
+              >
+                <svg height="20px" width="20px">
+                  <use href="./images/icon2.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <form>
+            <label for="footer-user-mail" class="footer-subscribe__lable"
+              >Подпишитесь на рассылку</label
+            >
+            <span class="footer-subscribe-input-box">
+              <input
+                type="email"
+                class="footer-subscribe__input"
+                name="footer-user-meil"
+                placeholder="E-mail"
+                required
+                id="footer-user-mail"
+              />
+
+              <button
+                type="submit"
+                class="footer-subscribe-input-box-submit-btn"
+              >
+                <span class="footer-subscribe-input-box-submit-btn__text">
+                  Подписаться
+                  <svg
+                    class="footer-subscribe-input-box-submit-btn-input__icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icon2.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+}
+.heder__logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.logo__web {
+  color: #2196f3;
+}
+.logo__studio {
+  color: #000000;
+}
+
+.menu-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+}
+.menu-list__item {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+.mob-menu-btn {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: calc(100% - 50px);
+  background-color: #ffffff;
+  border-color: transparent;
+  fill: #212121;
+  cursor: pointer;
+
+  &:focus {
+    fill: #2196f3;
+  }
+  &:hover {
+    fill: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mail .contacts__icon {
+  fill: #757575;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.phone .contacts__icon {
+  fill: #757575;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+.menu__link {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 28px;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--header-link-color);
+  }
+  &:focus {
+    color: var(--header-link-color);
+  }
+}
+.menu-list__item {
+  position: relative;
+  height: 100%;
+}
+.link__line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 46px;
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+.mail {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:focus .contacts__icon {
+    fill: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
+}
+.contacts-list__link {
+  transition: color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 30px;
+  }
+  &:hover .mail {
+    color: #2196f3;
+  }
+  &:hover .contacts__icon {
+    fill: #2196f3;
+  }
+  &:hover .phone {
+    color: #2196f3;
+  }
+  &:focus .phone {
+    color: #2196f3;
+  }
+}
+.phone {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:focus .contacts__icon {
+    fill: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+.mob-menu-close-btn {
+  position: absolute;
+  display: block;
+  left: calc(100% - 45px);
+
+  background-color: #ffffff;
+  border-color: transparent;
+  fill: #212121;
+  cursor: pointer;
+
+  &:focus {
+    fill: #2196f3;
+  }
+  &:hover {
+    fill: #2196f3;
+  }
+}
+.mob-menu-top {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+.mob-navigation {
+  margin-top: 40px;
+}
+.mob-menu-list__item {
+  padding-bottom: 32px;
+}
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--header-link-color);
+  }
+  &:focus {
+    color: var(--header-link-color);
+  }
+}
+.mob-menu-bottom {
+  width: 100%;
+}
+.mob-contacts-list__link {
+  margin-bottom: 32px;
+}
+.mob-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-list__block {
+  flex-wrap: wrap;
+  bottom: 0;
+  display: flex;
+  margin-bottom: 48px;
+  margin-top: 32px;
+}
+.mob__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mob__list:not(:first-child) {
+  padding-left: 10px;
+}
+.mob-list__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-align: center;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
